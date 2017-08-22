@@ -16,25 +16,5 @@ namespace ExCap07
         {
             InitializeComponent();
         }
-
-        private void IncluiButton_Click(object sender, EventArgs e)
-        {
-            displayListBox.Items.Add(inputTextBox.Text);
-            inputTextBox.Clear();
-            inputTextBox.Focus();
-        }
-
-        private void RemoveButt_Click(object sender, EventArgs e)
-        {
-            // check whether item is selected; if so, remove
-            if (displayListBox.SelectedIndex != -1)
-                displayListBox.Items.RemoveAt(displayListBox.SelectedIndex);
-            // end method removeButton_Click
-        }
-
-        private void LimpaButt_Click(object sender, EventArgs e)
-        {
-            displayListBox.Items.Clear();
-        }
     }
 }

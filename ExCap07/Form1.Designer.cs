@@ -35,13 +35,12 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.RemoveButt = new System.Windows.Forms.Button();
-            this.inputTextBox = new System.Windows.Forms.TextBox();
-            this.IncluiButton = new System.Windows.Forms.Button();
-            this.displayListBox = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.LimpaButt = new System.Windows.Forms.Button();
             this.tabControl10.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -59,15 +58,14 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.LimpaButt);
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.RemoveButt);
-            this.tabPage1.Controls.Add(this.inputTextBox);
-            this.tabPage1.Controls.Add(this.IncluiButton);
-            this.tabPage1.Controls.Add(this.displayListBox);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.listBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -78,81 +76,75 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(429, 285);
+            this.button6.Location = new System.Drawing.Point(429, 287);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 31);
+            this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 7;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(341, 285);
+            this.button5.Location = new System.Drawing.Point(341, 287);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 31);
+            this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 6;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(429, 235);
+            this.button4.Location = new System.Drawing.Point(429, 232);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 31);
+            this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 5;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(341, 235);
+            this.button3.Location = new System.Drawing.Point(341, 232);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 31);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // RemoveButt
+            // button2
             // 
-            this.RemoveButt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemoveButt.ForeColor = System.Drawing.Color.Red;
-            this.RemoveButt.Location = new System.Drawing.Point(341, 135);
-            this.RemoveButt.Name = "RemoveButt";
-            this.RemoveButt.Size = new System.Drawing.Size(163, 31);
-            this.RemoveButt.TabIndex = 3;
-            this.RemoveButt.Text = "Remove a linha ";
-            this.RemoveButt.UseVisualStyleBackColor = true;
-            this.RemoveButt.Click += new System.EventHandler(this.RemoveButt_Click);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(341, 159);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(163, 31);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // inputTextBox
+            // textBox1
             // 
-            this.inputTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTextBox.Location = new System.Drawing.Point(341, 40);
-            this.inputTextBox.Name = "inputTextBox";
-            this.inputTextBox.Size = new System.Drawing.Size(163, 26);
-            this.inputTextBox.TabIndex = 2;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(341, 40);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(163, 26);
+            this.textBox1.TabIndex = 2;
             // 
-            // IncluiButton
+            // button1
             // 
-            this.IncluiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncluiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.IncluiButton.Location = new System.Drawing.Point(341, 85);
-            this.IncluiButton.Name = "IncluiButton";
-            this.IncluiButton.Size = new System.Drawing.Size(163, 31);
-            this.IncluiButton.TabIndex = 1;
-            this.IncluiButton.Text = "Inclui no List Box";
-            this.IncluiButton.UseVisualStyleBackColor = true;
-            this.IncluiButton.Click += new System.EventHandler(this.IncluiButton_Click);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(341, 93);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(163, 31);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // displayListBox
+            // listBox1
             // 
-            this.displayListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayListBox.FormattingEnabled = true;
-            this.displayListBox.ItemHeight = 20;
-            this.displayListBox.Location = new System.Drawing.Point(20, 30);
-            this.displayListBox.Name = "displayListBox";
-            this.displayListBox.Size = new System.Drawing.Size(267, 404);
-            this.displayListBox.TabIndex = 0;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(20, 30);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(267, 407);
+            this.listBox1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -163,17 +155,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // LimpaButt
-            // 
-            this.LimpaButt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LimpaButt.Location = new System.Drawing.Point(341, 185);
-            this.LimpaButt.Name = "LimpaButt";
-            this.LimpaButt.Size = new System.Drawing.Size(163, 31);
-            this.LimpaButt.TabIndex = 8;
-            this.LimpaButt.Text = "Limpa a lista";
-            this.LimpaButt.UseVisualStyleBackColor = true;
-            this.LimpaButt.Click += new System.EventHandler(this.LimpaButt_Click);
             // 
             // Form1
             // 
@@ -194,16 +175,15 @@
 
         private System.Windows.Forms.TabControl tabControl10;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ListBox displayListBox;
+        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button RemoveButt;
-        private System.Windows.Forms.TextBox inputTextBox;
-        private System.Windows.Forms.Button IncluiButton;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button LimpaButt;
     }
 }

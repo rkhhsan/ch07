@@ -19,9 +19,14 @@ namespace ExCap07
 
         private void button1_Click(object sender, EventArgs e)
         {
-            displayListBox.Items.Add(inputTextBox.Text);
-            inputTextBox.Clear();
-            inputTextBox.Focus();
+            if (inputTextBox.Text != "")
+            {
+                displayListBox.Items.Add(inputTextBox.Text);
+                inputTextBox.Clear();
+                inputTextBox.Focus();
+            }
+            else
+                inputTextBox.Focus();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -122,7 +122,7 @@
             this.RemoveButt.TabIndex = 3;
             this.RemoveButt.Text = "Remove a linha ";
             this.RemoveButt.UseVisualStyleBackColor = true;
-            this.RemoveButt.Click += new System.EventHandler(this.button2_Click);
+            this.RemoveButt.Click += new System.EventHandler(this.RemoveButt_Click);
             // 
             // inputTextBox
             // 
@@ -142,7 +142,7 @@
             this.IncluiButton.TabIndex = 1;
             this.IncluiButton.Text = "Inclui no List Box";
             this.IncluiButton.UseVisualStyleBackColor = true;
-            this.IncluiButton.Click += new System.EventHandler(this.button1_Click);
+            this.IncluiButton.Click += new System.EventHandler(this.IncluiButton_Click);
             // 
             // displayListBox
             // 
@@ -173,7 +173,7 @@
             this.LimpaButt.TabIndex = 8;
             this.LimpaButt.Text = "Limpa a lista";
             this.LimpaButt.UseVisualStyleBackColor = true;
-            this.LimpaButt.Click += new System.EventHandler(this.button1_Click_1);
+            this.LimpaButt.Click += new System.EventHandler(this.LimpaButt_Click);
             // 
             // Form1
             // 

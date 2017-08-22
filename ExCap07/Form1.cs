@@ -17,7 +17,7 @@ namespace ExCap07
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void IncluiButton_Click(object sender, EventArgs e)
         {
             if (inputTextBox.Text != "")
             {
@@ -29,7 +29,7 @@ namespace ExCap07
                 inputTextBox.Focus();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void RemoveButt_Click(object sender, EventArgs e)
         {
             // check whether item is selected; if so, remove
             if (displayListBox.SelectedIndex != -1)
@@ -37,7 +37,7 @@ namespace ExCap07
             // end method removeButton_Click
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void LimpaButt_Click(object sender, EventArgs e)
         {
             displayListBox.Items.Clear();
         }

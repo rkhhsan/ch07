@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumFinder", "fig07_03\MaximumFinder\MaximumFinder\MaximumFinder.csproj", "{91DF219C-361D-4FDB-9DDF-D700392A8149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomIntegers", "fig07_06\RandomIntegers\RandomIntegers\RandomIntegers.csproj", "{05FACC95-1889-44E3-AEC4-09D205DFBF2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollDie", "fig07_07\RollDie\RollDie\RollDie.csproj", "{E7B2C273-00E0-43FB-9689-29EACCC05971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Craps", "fig07_08\Craps\Craps\Craps.csproj", "{BDBBD966-824B-4F88-A626-0CFFB76791A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scope", "fig07_09\Scope\Scope\Scope.csproj", "{A1216953-C750-4C24-9A19-7694D428DE1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExCap07", "ExCap07\ExCap07.csproj", "{DDD4FB3A-5938-4D2C-9EC5-B1CBC9DB648C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91DF219C-361D-4FDB-9DDF-D700392A8149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DF219C-361D-4FDB-9DDF-D700392A8149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DF219C-361D-4FDB-9DDF-D700392A8149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DF219C-361D-4FDB-9DDF-D700392A8149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05FACC95-1889-44E3-AEC4-09D205DFBF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05FACC95-1889-44E3-AEC4-09D205DFBF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05FACC95-1889-44E3-AEC4-09D205DFBF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05FACC95-1889-44E3-AEC4-09D205DFBF2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B2C273-00E0-43FB-9689-29EACCC05971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B2C273-00E0-43FB-9689-29EACCC05971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B2C273-00E0-43FB-9689-29EACCC05971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B2C273-00E0-43FB-9689-29EACCC05971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDBBD966-824B-4F88-A626-0CFFB76791A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDBBD966-824B-4F88-A626-0CFFB76791A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDBBD966-824B-4F88-A626-0CFFB76791A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDBBD966-824B-4F88-A626-0CFFB76791A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1216953-C750-4C24-9A19-7694D428DE1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1216953-C750-4C24-9A19-7694D428DE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1216953-C750-4C24-9A19-7694D428DE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1216953-C750-4C24-9A19-7694D428DE1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD4FB3A-5938-4D2C-9EC5-B1CBC9DB648C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD4FB3A-5938-4D2C-9EC5-B1CBC9DB648C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD4FB3A-5938-4D2C-9EC5-B1CBC9DB648C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD4FB3A-5938-4D2C-9EC5-B1CBC9DB648C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -40,6 +40,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +58,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button3);
@@ -142,6 +144,15 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(429, 287);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,5 +181,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button button6;
     }
 }

@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl10 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.LimpaButt = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Ex5_23 = new System.Windows.Forms.Button();
             this.RemoveButt = new System.Windows.Forms.Button();
             this.inputTextBox = new System.Windows.Forms.TextBox();
             this.IncluiButton = new System.Windows.Forms.Button();
             this.displayListBox = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.LimpaButt = new System.Windows.Forms.Button();
             this.tabControl10.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.Ex5_23);
             this.tabPage1.Controls.Add(this.RemoveButt);
             this.tabPage1.Controls.Add(this.inputTextBox);
             this.tabPage1.Controls.Add(this.IncluiButton);
@@ -75,6 +75,17 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // LimpaButt
+            // 
+            this.LimpaButt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LimpaButt.Location = new System.Drawing.Point(341, 185);
+            this.LimpaButt.Name = "LimpaButt";
+            this.LimpaButt.Size = new System.Drawing.Size(163, 31);
+            this.LimpaButt.TabIndex = 8;
+            this.LimpaButt.Text = "Limpa a lista";
+            this.LimpaButt.UseVisualStyleBackColor = true;
+            this.LimpaButt.Click += new System.EventHandler(this.LimpaButt_Click);
             // 
             // button6
             // 
@@ -103,14 +114,18 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Ex5_23
             // 
-            this.button3.Location = new System.Drawing.Point(341, 235);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 31);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Ex5_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ex5_23.Location = new System.Drawing.Point(341, 235);
+            this.Ex5_23.Name = "Ex5_23";
+            this.Ex5_23.Size = new System.Drawing.Size(75, 31);
+            this.Ex5_23.TabIndex = 4;
+            this.Ex5_23.Text = "Ex 5-23";
+            this.toolTip1.SetToolTip(this.Ex5_23, "Ache o maior, o segundo maior , o menor , a soma e a média. \r\nDigite número reais" +
+        " na caixa de texto e aperte no botão Inclui no List Box !!");
+            this.Ex5_23.UseVisualStyleBackColor = true;
+            this.Ex5_23.Click += new System.EventHandler(this.Ex5_23_Click);
             // 
             // RemoveButt
             // 
@@ -164,16 +179,15 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // LimpaButt
+            // toolTip1
             // 
-            this.LimpaButt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LimpaButt.Location = new System.Drawing.Point(341, 185);
-            this.LimpaButt.Name = "LimpaButt";
-            this.LimpaButt.Size = new System.Drawing.Size(163, 31);
-            this.LimpaButt.TabIndex = 8;
-            this.LimpaButt.Text = "Limpa a lista";
-            this.LimpaButt.UseVisualStyleBackColor = true;
-            this.LimpaButt.Click += new System.EventHandler(this.LimpaButt_Click);
+            this.toolTip1.AutoPopDelay = 15000;
+            this.toolTip1.InitialDelay = 500;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ReshowDelay = 100;
+            this.toolTip1.ShowAlways = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Exercícios Deitel C# 2012 HTP 5ed !!";
             // 
             // Form1
             // 
@@ -182,7 +196,7 @@
             this.ClientSize = new System.Drawing.Size(588, 511);
             this.Controls.Add(this.tabControl10);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Form1";           
             this.tabControl10.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -198,7 +212,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Ex5_23;
         private System.Windows.Forms.Button RemoveButt;
         private System.Windows.Forms.TextBox inputTextBox;
         private System.Windows.Forms.Button IncluiButton;

@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl10 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.LimpaButt = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Ex6_15 = new System.Windows.Forms.Button();
+            this.Ex6_13 = new System.Windows.Forms.Button();
             this.Ex5_23 = new System.Windows.Forms.Button();
             this.RemoveButt = new System.Windows.Forms.Button();
             this.inputTextBox = new System.Windows.Forms.TextBox();
@@ -54,15 +55,15 @@
             this.tabControl10.Location = new System.Drawing.Point(0, 0);
             this.tabControl10.Name = "tabControl10";
             this.tabControl10.SelectedIndex = 0;
-            this.tabControl10.Size = new System.Drawing.Size(588, 511);
+            this.tabControl10.Size = new System.Drawing.Size(724, 606);
             this.tabControl10.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.LimpaButt);
             this.tabPage1.Controls.Add(this.button6);
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.Ex6_15);
+            this.tabPage1.Controls.Add(this.Ex6_13);
             this.tabPage1.Controls.Add(this.Ex5_23);
             this.tabPage1.Controls.Add(this.RemoveButt);
             this.tabPage1.Controls.Add(this.inputTextBox);
@@ -71,7 +72,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(580, 485);
+            this.tabPage1.Size = new System.Drawing.Size(716, 580);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -79,7 +80,7 @@
             // LimpaButt
             // 
             this.LimpaButt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LimpaButt.Location = new System.Drawing.Point(341, 185);
+            this.LimpaButt.Location = new System.Drawing.Point(480, 181);
             this.LimpaButt.Name = "LimpaButt";
             this.LimpaButt.Size = new System.Drawing.Size(163, 31);
             this.LimpaButt.TabIndex = 8;
@@ -89,35 +90,42 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(429, 285);
+            this.button6.Location = new System.Drawing.Point(568, 285);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 31);
             this.button6.TabIndex = 7;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // Ex6_15
             // 
-            this.button5.Location = new System.Drawing.Point(341, 285);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 31);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Ex6_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ex6_15.Location = new System.Drawing.Point(480, 285);
+            this.Ex6_15.Name = "Ex6_15";
+            this.Ex6_15.Size = new System.Drawing.Size(75, 31);
+            this.Ex6_15.TabIndex = 6;
+            this.Ex6_15.Text = "Ex 6-15";
+            this.toolTip1.SetToolTip(this.Ex6_15, resources.GetString("Ex6_15.ToolTip"));
+            this.Ex6_15.UseVisualStyleBackColor = true;
+            this.Ex6_15.Click += new System.EventHandler(this.Ex6_15_Click);
             // 
-            // button4
+            // Ex6_13
             // 
-            this.button4.Location = new System.Drawing.Point(429, 235);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 31);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Ex6_13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ex6_13.Location = new System.Drawing.Point(568, 233);
+            this.Ex6_13.Name = "Ex6_13";
+            this.Ex6_13.Size = new System.Drawing.Size(75, 31);
+            this.Ex6_13.TabIndex = 5;
+            this.Ex6_13.Text = "Ex 6-13";
+            this.toolTip1.SetToolTip(this.Ex6_13, "Calcula o fatorial. Digite um inteiro positivo na\r\ncaixa de texto e após aperte n" +
+        "este botão.");
+            this.Ex6_13.UseVisualStyleBackColor = true;
+            this.Ex6_13.Click += new System.EventHandler(this.Ex6_13_Click);
             // 
             // Ex5_23
             // 
             this.Ex5_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ex5_23.Location = new System.Drawing.Point(341, 235);
+            this.Ex5_23.Location = new System.Drawing.Point(480, 233);
             this.Ex5_23.Name = "Ex5_23";
             this.Ex5_23.Size = new System.Drawing.Size(75, 31);
             this.Ex5_23.TabIndex = 4;
@@ -131,7 +139,7 @@
             // 
             this.RemoveButt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveButt.ForeColor = System.Drawing.Color.Red;
-            this.RemoveButt.Location = new System.Drawing.Point(341, 135);
+            this.RemoveButt.Location = new System.Drawing.Point(480, 129);
             this.RemoveButt.Name = "RemoveButt";
             this.RemoveButt.Size = new System.Drawing.Size(163, 31);
             this.RemoveButt.TabIndex = 3;
@@ -142,7 +150,7 @@
             // inputTextBox
             // 
             this.inputTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTextBox.Location = new System.Drawing.Point(341, 40);
+            this.inputTextBox.Location = new System.Drawing.Point(480, 30);
             this.inputTextBox.Name = "inputTextBox";
             this.inputTextBox.Size = new System.Drawing.Size(163, 26);
             this.inputTextBox.TabIndex = 2;
@@ -151,7 +159,7 @@
             // 
             this.IncluiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncluiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.IncluiButton.Location = new System.Drawing.Point(341, 85);
+            this.IncluiButton.Location = new System.Drawing.Point(480, 77);
             this.IncluiButton.Name = "IncluiButton";
             this.IncluiButton.Size = new System.Drawing.Size(163, 31);
             this.IncluiButton.TabIndex = 1;
@@ -163,10 +171,11 @@
             // 
             this.displayListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayListBox.FormattingEnabled = true;
+            this.displayListBox.HorizontalScrollbar = true;
             this.displayListBox.ItemHeight = 20;
             this.displayListBox.Location = new System.Drawing.Point(20, 30);
             this.displayListBox.Name = "displayListBox";
-            this.displayListBox.Size = new System.Drawing.Size(267, 404);
+            this.displayListBox.Size = new System.Drawing.Size(412, 544);
             this.displayListBox.TabIndex = 0;
             // 
             // tabPage2
@@ -174,7 +183,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(580, 485);
+            this.tabPage2.Size = new System.Drawing.Size(716, 485);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -193,10 +202,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 511);
+            this.ClientSize = new System.Drawing.Size(724, 606);
             this.Controls.Add(this.tabControl10);
             this.Name = "Form1";
-            this.Text = "Form1";           
+            this.Text = "Form1";
             this.tabControl10.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -210,8 +219,8 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ListBox displayListBox;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Ex6_15;
+        private System.Windows.Forms.Button Ex6_13;
         private System.Windows.Forms.Button Ex5_23;
         private System.Windows.Forms.Button RemoveButt;
         private System.Windows.Forms.TextBox inputTextBox;

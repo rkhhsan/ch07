@@ -29,6 +29,7 @@ namespace ExCap07
 
         private void IncluiButton_Click(object sender, EventArgs e)
         {
+            displayListBox.Font = new Font("Courier", 12);
             if (inputTextBox.Text != "")
             {
                 displayListBox.Items.Add(inputTextBox.Text);
@@ -96,6 +97,7 @@ namespace ExCap07
             segundaVez = false;
             counter = 1;
             inputTextBox.Focus();
+            displayListBox.Font = new Font("Courier", 12);
         }
 
         private void Ex5_23_Click(object sender, EventArgs e)
@@ -106,6 +108,73 @@ namespace ExCap07
             displayListBox.Items.Add("O menor valor é: " + Convert.ToString(menor));
             displayListBox.Items.Add("A soma é: " + Convert.ToString(soma));
             displayListBox.Items.Add("A média é: " + Convert.ToString(media));
+        }
+
+        private void Ex6_13_Click(object sender, EventArgs e)
+        {
+            displayListBox.Font = new Font("Courier", 12);
+            double fat = 1;
+            int j;
+            number = Convert.ToInt32(inputTextBox.Text);
+            for (int i = 1; i <= number; i++)
+            {
+                for (j = 1; j <= i; ++j)
+                    fat = (double)fat * j;
+                displayListBox.Items.Add("O fatorial de " + Convert.ToString(j - 1) + " é " + Convert.ToString(fat));
+                fat = 1;
+            }
+        }
+
+        private void Ex6_15_Click(object sender, EventArgs e)
+        {
+            string str = "";
+            string esp = "  ";
+            int i, j;
+            displayListBox.Font = new Font("Courier New", 14);
+
+            for (i = 1; i <= 10; i++)
+            {
+                for (j = 1; j <= i; j++)
+                    str = str + " *";
+                displayListBox.Items.Add(str);
+                str = "";
+            }
+
+            displayListBox.Items.Add("");//linha em branco
+
+            for (i = 10; i >= 1; i--)
+            {
+                for (j = 1; j <= i; j++)
+                    str = str + " *";
+                displayListBox.Items.Add(str);
+                str = "";
+            }
+
+            displayListBox.Items.Add("12345678901234567890");//linha em branco
+
+            for (i = 0; i <= 9; i++)
+            {
+                
+                for (j = 1; j <= i; j++)
+                    str = str + esp;
+                for (j = 1; j <= 10 - i; j++)
+                    str = str + "* ";
+                    displayListBox.Items.Add(str);
+                str = "";
+            }
+
+            displayListBox.Items.Add("12345678901234567890");//linha em branco
+            str = "";
+            for (i = 1; i <= 10; i++)            
+            {
+                for (j = 1; j <= 10-i; j++)
+                    str = str + esp;
+                for (j = 1; j <= i; j++)
+                    str = str + "* ";
+                displayListBox.Items.Add(str);
+                str = "";
+            }
+            
         }
 
 

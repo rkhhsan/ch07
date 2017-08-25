@@ -120,7 +120,19 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="Ex6_15.ToolTip" xml:space="preserve">
+    <value> 6.15 (Displaying Triangles) Write an app that displays 
+the following patterns separately, one below the other. 
+Use for loops to generate the patterns.
+ All asterisks (*) should be displayed by a single
+statement of the form Console.Write( '*' ); which causes
+ the asterisks to display side by side. A
+statement of the form Console.WriteLine(); 
+can be used to move to the next line.
+ A statement of the form Console.Write( ' ' ); can be 
+used to display a space for the last two patterns. 
+There should be no other output statements in the app. 
+[Hint: The last two patterns require that each line
+begin with an appropriate number of blank spaces.]</value>
+  </data>
 </root>

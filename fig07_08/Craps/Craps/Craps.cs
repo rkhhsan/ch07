@@ -23,50 +23,53 @@ public class Craps
    // plays one game of craps
    public static void Main( string[] args )
    {
-      // gameStatus can contain CONTINUE, WON or LOST
-      Status gameStatus = Status.CONTINUE;
-      int myPoint = 0; // point if no win or loss on first roll
+       for (int n = 1; n <= 5; n++)
+       {
+           // gameStatus can contain CONTINUE, WON or LOST
+           Status gameStatus = Status.CONTINUE;
+           int myPoint = 0; // point if no win or loss on first roll
 
-      int sumOfDice = RollDice(); // first roll of the dice
+           int sumOfDice = RollDice(); // first roll of the dice
 
-      // determine game status and point based on first roll 
-      switch ( ( DiceNames ) sumOfDice )
-      {
-         case DiceNames.SEVEN: // win with 7 on first roll
-         case DiceNames.YO_LEVEN: // win with 11 on first roll           
-            gameStatus = Status.WON;
-            break;
-         case DiceNames.SNAKE_EYES: // lose with 2 on first roll
-         case DiceNames.TREY: // lose with 3 on first roll
-         case DiceNames.BOX_CARS: // lose with 12 on first roll
-            gameStatus = Status.LOST;
-            break;
-         default: // did not win or lose, so remember point         
-            gameStatus = Status.CONTINUE; // game is not over
-            myPoint = sumOfDice; // remember the point
-            Console.WriteLine( "Point is {0}", myPoint );
-            break;
-      } // end switch 
+           // determine game status and point based on first roll 
+           switch ((DiceNames)sumOfDice)
+           {
+               case DiceNames.SEVEN: // win with 7 on first roll
+               case DiceNames.YO_LEVEN: // win with 11 on first roll           
+                   gameStatus = Status.WON;
+                   break;
+               case DiceNames.SNAKE_EYES: // lose with 2 on first roll
+               case DiceNames.TREY: // lose with 3 on first roll
+               case DiceNames.BOX_CARS: // lose with 12 on first roll
+                   gameStatus = Status.LOST;
+                   break;
+               default: // did not win or lose, so remember point         
+                   gameStatus = Status.CONTINUE; // game is not over
+                   myPoint = sumOfDice; // remember the point
+                   Console.WriteLine("Point is {0}", myPoint);
+                   break;
+           } // end switch 
 
-      // while game is not complete
-      while ( gameStatus == Status.CONTINUE ) // game not WON or LOST
-      {
-         sumOfDice = RollDice(); // roll dice again
+           // while game is not complete
+           while (gameStatus == Status.CONTINUE) // game not WON or LOST
+           {
+               sumOfDice = RollDice(); // roll dice again
 
-         // determine game status
-         if ( sumOfDice == myPoint ) // win by making point
-            gameStatus = Status.WON;
-         else
-            // lose by rolling 7 before point
-            if ( sumOfDice == ( int ) DiceNames.SEVEN )
-               gameStatus = Status.LOST;
-      } // end while 
+               // determine game status
+               if (sumOfDice == myPoint) // win by making point
+                   gameStatus = Status.WON;
+               else
+                   // lose by rolling 7 before point
+                   if (sumOfDice == (int)DiceNames.SEVEN)
+                       gameStatus = Status.LOST;
+           } // end while 
 
-      // display won or lost message
-      if ( gameStatus == Status.WON )
-         Console.WriteLine( "Player wins" );
-      else
-         Console.WriteLine( "Player loses" );
+           // display won or lost message
+           if (gameStatus == Status.WON)
+               Console.WriteLine("Player wins\n");
+           else
+               Console.WriteLine("Player loses\n");
+       }
    } // end Main
 
    // roll dice, calculate sum and display results

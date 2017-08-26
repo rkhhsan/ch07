@@ -27,6 +27,27 @@ namespace ExCap07
         bool primeiraVez = true;
         bool segundaVez = false;
 
+        public static double n;
+        public static decimal i, PV, PMT, FV;
+
+        public static decimal S(decimal i, double n)
+        {
+            i = i / 100;
+            decimal q = 1 + i;
+            decimal s = (decimal)(Math.Pow((double)q, n) - 1);
+
+            return s / i;
+        }
+
+        public static decimal A(decimal i, double n)
+        {
+            i = i / 100;
+            decimal q = 1 + i;
+            decimal a = (decimal)(1 - Math.Pow((double)q, -n));
+
+            return a / i;
+        }
+
         private void IncluiButton_Click(object sender, EventArgs e)
         {
             displayListBox.Font = new Font("Courier", 12);
@@ -154,27 +175,63 @@ namespace ExCap07
 
             for (i = 0; i <= 9; i++)
             {
-                
+
                 for (j = 1; j <= i; j++)
                     str = str + esp;
                 for (j = 1; j <= 10 - i; j++)
                     str = str + "* ";
-                    displayListBox.Items.Add(str);
+                displayListBox.Items.Add(str);
                 str = "";
             }
 
             displayListBox.Items.Add("12345678901234567890");//linha em branco
             str = "";
-            for (i = 1; i <= 10; i++)            
+            for (i = 1; i <= 10; i++)
             {
-                for (j = 1; j <= 10-i; j++)
+                for (j = 1; j <= 10 - i; j++)
                     str = str + esp;
                 for (j = 1; j <= i; j++)
                     str = str + "* ";
                 displayListBox.Items.Add(str);
                 str = "";
             }
-            
+
+        }
+
+        private void FV_but_Click(object sender, EventArgs e)
+        {
+
+            PMT = Convert.ToDecimal(PMT_textBox.Text);
+            n = Convert.ToDouble(n_textBox.Text);
+            i = Convert.ToDecimal(i_textBox.Text);
+            PV = Convert.ToDecimal(PV_textBox.Text);
+            FV = PMT * S(i, n) + (PV * (decimal)Math.Pow(1 + (double)(i / 100), n));
+
+            FV_textBox.Text = Convert.ToString(FV);
+        }
+
+        private void PV_but_Click(object sender, EventArgs e)
+        {
+            PMT = Convert.ToDecimal(PMT_textBox.Text);
+            n = Convert.ToDouble(n_textBox.Text);
+            i = Convert.ToDecimal(i_textBox.Text);
+            FV = Convert.ToDecimal(FV_textBox.Text);
+            PV = PMT * A(i, n) + (FV / (decimal)Math.Pow(1 + (double)(i / 100), n));
+
+            PV_textBox.Text = Convert.ToString(PV);
+
+        }
+
+        private void PMT_but_Click(object sender, EventArgs e)
+        {
+            PV = Convert.ToDecimal(PV_textBox.Text);
+            n = Convert.ToDouble(n_textBox.Text);
+            i = Convert.ToDecimal(i_textBox.Text);
+            FV = Convert.ToDecimal(FV_textBox.Text);
+            PMT = FV - PV * (decimal)Math.Pow(1 + (double)(i / 100), n);
+            PMT = PMT / S(i, n);
+            PMT_textBox.Text = Convert.ToString(PMT);
+
         }
 
 

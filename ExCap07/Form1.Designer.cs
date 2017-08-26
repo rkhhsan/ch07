@@ -42,15 +42,28 @@
             this.IncluiButton = new System.Windows.Forms.Button();
             this.displayListBox = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.FV_textBox = new System.Windows.Forms.TextBox();
+            this.PMT_textBox = new System.Windows.Forms.TextBox();
+            this.PV_textBox = new System.Windows.Forms.TextBox();
+            this.i_textBox = new System.Windows.Forms.TextBox();
+            this.n_textBox = new System.Windows.Forms.TextBox();
+            this.FV_but = new System.Windows.Forms.Button();
+            this.PMT_but = new System.Windows.Forms.Button();
+            this.PV_but = new System.Windows.Forms.Button();
+            this.i_but = new System.Windows.Forms.Button();
+            this.n_but = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl10.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl10
             // 
             this.tabControl10.Controls.Add(this.tabPage1);
             this.tabControl10.Controls.Add(this.tabPage2);
+            this.tabControl10.Controls.Add(this.tabPage3);
             this.tabControl10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl10.Location = new System.Drawing.Point(0, 0);
             this.tabControl10.Name = "tabControl10";
@@ -180,13 +193,127 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.FV_textBox);
+            this.tabPage2.Controls.Add(this.PMT_textBox);
+            this.tabPage2.Controls.Add(this.PV_textBox);
+            this.tabPage2.Controls.Add(this.i_textBox);
+            this.tabPage2.Controls.Add(this.n_textBox);
+            this.tabPage2.Controls.Add(this.FV_but);
+            this.tabPage2.Controls.Add(this.PMT_but);
+            this.tabPage2.Controls.Add(this.PV_but);
+            this.tabPage2.Controls.Add(this.i_but);
+            this.tabPage2.Controls.Add(this.n_but);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(716, 485);
+            this.tabPage2.Size = new System.Drawing.Size(716, 580);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // FV_textBox
+            // 
+            this.FV_textBox.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FV_textBox.Location = new System.Drawing.Point(26, 209);
+            this.FV_textBox.Name = "FV_textBox";
+            this.FV_textBox.Size = new System.Drawing.Size(213, 26);
+            this.FV_textBox.TabIndex = 9;
+            // 
+            // PMT_textBox
+            // 
+            this.PMT_textBox.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PMT_textBox.Location = new System.Drawing.Point(26, 166);
+            this.PMT_textBox.Name = "PMT_textBox";
+            this.PMT_textBox.Size = new System.Drawing.Size(213, 26);
+            this.PMT_textBox.TabIndex = 8;
+            // 
+            // PV_textBox
+            // 
+            this.PV_textBox.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PV_textBox.Location = new System.Drawing.Point(26, 123);
+            this.PV_textBox.Name = "PV_textBox";
+            this.PV_textBox.Size = new System.Drawing.Size(213, 26);
+            this.PV_textBox.TabIndex = 7;
+            // 
+            // i_textBox
+            // 
+            this.i_textBox.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i_textBox.Location = new System.Drawing.Point(26, 80);
+            this.i_textBox.Name = "i_textBox";
+            this.i_textBox.Size = new System.Drawing.Size(213, 26);
+            this.i_textBox.TabIndex = 6;
+            // 
+            // n_textBox
+            // 
+            this.n_textBox.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n_textBox.Location = new System.Drawing.Point(26, 37);
+            this.n_textBox.Name = "n_textBox";
+            this.n_textBox.Size = new System.Drawing.Size(213, 26);
+            this.n_textBox.TabIndex = 5;
+            // 
+            // FV_but
+            // 
+            this.FV_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FV_but.Location = new System.Drawing.Point(256, 206);
+            this.FV_but.Name = "FV_but";
+            this.FV_but.Size = new System.Drawing.Size(75, 32);
+            this.FV_but.TabIndex = 4;
+            this.FV_but.Text = "FV";
+            this.FV_but.UseVisualStyleBackColor = true;
+            this.FV_but.Click += new System.EventHandler(this.FV_but_Click);
+            // 
+            // PMT_but
+            // 
+            this.PMT_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PMT_but.Location = new System.Drawing.Point(256, 163);
+            this.PMT_but.Name = "PMT_but";
+            this.PMT_but.Size = new System.Drawing.Size(75, 32);
+            this.PMT_but.TabIndex = 3;
+            this.PMT_but.Text = "PMT";
+            this.PMT_but.UseVisualStyleBackColor = true;
+            this.PMT_but.Click += new System.EventHandler(this.PMT_but_Click);
+            // 
+            // PV_but
+            // 
+            this.PV_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PV_but.Location = new System.Drawing.Point(256, 120);
+            this.PV_but.Name = "PV_but";
+            this.PV_but.Size = new System.Drawing.Size(75, 32);
+            this.PV_but.TabIndex = 2;
+            this.PV_but.Text = "PV";
+            this.PV_but.UseVisualStyleBackColor = true;
+            this.PV_but.Click += new System.EventHandler(this.PV_but_Click);
+            // 
+            // i_but
+            // 
+            this.i_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i_but.Location = new System.Drawing.Point(256, 77);
+            this.i_but.Name = "i_but";
+            this.i_but.Size = new System.Drawing.Size(75, 32);
+            this.i_but.TabIndex = 1;
+            this.i_but.Text = "i";
+            this.i_but.UseVisualStyleBackColor = true;
+            // 
+            // n_but
+            // 
+            this.n_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n_but.Location = new System.Drawing.Point(256, 34);
+            this.n_but.Name = "n_but";
+            this.n_but.Size = new System.Drawing.Size(75, 32);
+            this.n_but.TabIndex = 0;
+            this.n_but.Text = "n";
+            this.n_but.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.n_but.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(716, 580);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // toolTip1
             // 
@@ -209,6 +336,8 @@
             this.tabControl10.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -228,5 +357,16 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button LimpaButt;
+        private System.Windows.Forms.TextBox FV_textBox;
+        private System.Windows.Forms.TextBox PMT_textBox;
+        private System.Windows.Forms.TextBox PV_textBox;
+        private System.Windows.Forms.TextBox i_textBox;
+        private System.Windows.Forms.TextBox n_textBox;
+        private System.Windows.Forms.Button FV_but;
+        private System.Windows.Forms.Button PMT_but;
+        private System.Windows.Forms.Button PV_but;
+        private System.Windows.Forms.Button i_but;
+        private System.Windows.Forms.Button n_but;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }

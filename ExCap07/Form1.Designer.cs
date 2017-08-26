@@ -304,6 +304,7 @@
             this.n_but.Text = "n";
             this.n_but.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.n_but.UseVisualStyleBackColor = true;
+            this.n_but.Click += new System.EventHandler(this.n_but_Click);
             // 
             // tabPage3
             // 

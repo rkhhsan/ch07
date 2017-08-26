@@ -207,7 +207,7 @@ namespace ExCap07
             PV = Convert.ToDecimal(PV_textBox.Text);
             FV = PMT * S(i, n) + (PV * (decimal)Math.Pow(1 + (double)(i / 100), n));
 
-            FV_textBox.Text = Convert.ToString(FV);
+            FV_textBox.Text = Convert.ToString(-FV);
         }
 
         private void PV_but_Click(object sender, EventArgs e)
@@ -218,7 +218,7 @@ namespace ExCap07
             FV = Convert.ToDecimal(FV_textBox.Text);
             PV = PMT * A(i, n) + (FV / (decimal)Math.Pow(1 + (double)(i / 100), n));
 
-            PV_textBox.Text = Convert.ToString(PV);
+            PV_textBox.Text = Convert.ToString(-PV);
 
         }
 
@@ -228,10 +228,22 @@ namespace ExCap07
             n = Convert.ToDouble(n_textBox.Text);
             i = Convert.ToDecimal(i_textBox.Text);
             FV = Convert.ToDecimal(FV_textBox.Text);
-            PMT = FV - PV * (decimal)Math.Pow(1 + (double)(i / 100), n);
+            PMT = FV + PV * (decimal)Math.Pow(1 + (double)(i / 100), n);
             PMT = PMT / S(i, n);
-            PMT_textBox.Text = Convert.ToString(PMT);
+            PMT_textBox.Text = Convert.ToString(-PMT);
 
+        }
+
+        private void n_but_Click(object sender, EventArgs e)
+        {
+            PV = Convert.ToDecimal(PV_textBox.Text);
+            i = Convert.ToDecimal(i_textBox.Text);
+            i = i/100;
+            FV = Convert.ToDecimal(FV_textBox.Text);
+            PMT = Convert.ToDecimal(PMT_textBox.Text);
+            n = Math.Log((double)(PMT - FV * i) / (double)(PV * i + PMT));
+            n = n / Math.Log(1 + (double)i);
+            n_textBox.Text = Convert.ToString(n);
         }
 
 

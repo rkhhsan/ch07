@@ -238,12 +238,43 @@ namespace ExCap07
         {
             PV = Convert.ToDecimal(PV_textBox.Text);
             i = Convert.ToDecimal(i_textBox.Text);
-            i = i/100;
+            i = i / 100;
             FV = Convert.ToDecimal(FV_textBox.Text);
             PMT = Convert.ToDecimal(PMT_textBox.Text);
             n = Math.Log((double)(PMT - FV * i) / (double)(PV * i + PMT));
             n = n / Math.Log(1 + (double)i);
             n_textBox.Text = Convert.ToString(n);
+        }
+
+        private void i_but_Click(object sender, EventArgs e)
+        {
+            PMT = Convert.ToDecimal(PMT_textBox.Text);
+            n = Convert.ToDouble(n_textBox.Text);
+            PV = Convert.ToDecimal(PV_textBox.Text);
+            FV = Convert.ToDecimal(FV_textBox.Text);
+            decimal i1 = 0, i2 = 200, i_Media, FV_aprox;
+
+            while (Math.Abs(i2 - i1) > (decimal)10E-25)
+            {
+
+                i_Media = (i1 + i2) / 2;
+                FV_aprox = PV * (decimal)Math.Pow(1 + (double)(i_Media / 100), n) + PMT * S(i_Media, n);
+
+                if (FV_aprox > -FV)
+                {
+                    i2 = i_Media;
+                }
+                else if (FV_aprox < -FV)
+                {
+                    i1 = i_Media;
+                }
+                else break;
+
+            }
+            i_Media = (i1 + i2) / 2;
+            string str;             
+            i_textBox.Text = Convert.ToString(i_Media);
+            MessageBox.Show("i1="+Convert.ToString(i1), "i2="+Convert.ToString(i2));
         }
 
 

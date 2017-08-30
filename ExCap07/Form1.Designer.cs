@@ -253,57 +253,85 @@
             // 
             // FV_but
             // 
-            this.FV_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FV_but.BackColor = System.Drawing.SystemColors.Control;
+            this.FV_but.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.FV_but.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.FV_but.FlatAppearance.BorderSize = 5;
+            this.FV_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FV_but.ForeColor = System.Drawing.Color.Black;
             this.FV_but.Location = new System.Drawing.Point(256, 206);
             this.FV_but.Name = "FV_but";
             this.FV_but.Size = new System.Drawing.Size(75, 32);
             this.FV_but.TabIndex = 4;
             this.FV_but.Text = "FV";
-            this.FV_but.UseVisualStyleBackColor = true;
+            this.FV_but.UseVisualStyleBackColor = false;
             this.FV_but.Click += new System.EventHandler(this.FV_but_Click);
             // 
             // PMT_but
             // 
-            this.PMT_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PMT_but.BackColor = System.Drawing.SystemColors.Control;
+            this.PMT_but.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.PMT_but.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.PMT_but.FlatAppearance.BorderSize = 5;
+            this.PMT_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PMT_but.ForeColor = System.Drawing.Color.Black;
             this.PMT_but.Location = new System.Drawing.Point(256, 163);
             this.PMT_but.Name = "PMT_but";
             this.PMT_but.Size = new System.Drawing.Size(75, 32);
             this.PMT_but.TabIndex = 3;
             this.PMT_but.Text = "PMT";
-            this.PMT_but.UseVisualStyleBackColor = true;
+            this.PMT_but.UseVisualStyleBackColor = false;
             this.PMT_but.Click += new System.EventHandler(this.PMT_but_Click);
             // 
             // PV_but
             // 
-            this.PV_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PV_but.BackColor = System.Drawing.SystemColors.Control;
+            this.PV_but.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.PV_but.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.PV_but.FlatAppearance.BorderSize = 5;
+            this.PV_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PV_but.ForeColor = System.Drawing.Color.Black;
             this.PV_but.Location = new System.Drawing.Point(256, 120);
             this.PV_but.Name = "PV_but";
             this.PV_but.Size = new System.Drawing.Size(75, 32);
             this.PV_but.TabIndex = 2;
             this.PV_but.Text = "PV";
-            this.PV_but.UseVisualStyleBackColor = true;
+            this.PV_but.UseVisualStyleBackColor = false;
             this.PV_but.Click += new System.EventHandler(this.PV_but_Click);
             // 
             // i_but
             // 
-            this.i_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i_but.BackColor = System.Drawing.SystemColors.Control;
+            this.i_but.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.i_but.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.i_but.FlatAppearance.BorderSize = 5;
+            this.i_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.i_but.ForeColor = System.Drawing.Color.Black;
             this.i_but.Location = new System.Drawing.Point(256, 77);
             this.i_but.Name = "i_but";
+            this.i_but.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.i_but.Size = new System.Drawing.Size(75, 32);
             this.i_but.TabIndex = 1;
-            this.i_but.Text = "i";
-            this.i_but.UseVisualStyleBackColor = true;
+            this.i_but.Text = "i%\r\n\r\n ";
+            this.i_but.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.i_but.UseVisualStyleBackColor = false;
+            this.i_but.Click += new System.EventHandler(this.i_but_Click);
             // 
             // n_but
             // 
-            this.n_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n_but.BackColor = System.Drawing.SystemColors.Control;
+            this.n_but.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.n_but.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.n_but.FlatAppearance.BorderSize = 5;
+            this.n_but.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.n_but.ForeColor = System.Drawing.Color.Black;
             this.n_but.Location = new System.Drawing.Point(256, 34);
             this.n_but.Name = "n_but";
             this.n_but.Size = new System.Drawing.Size(75, 32);
             this.n_but.TabIndex = 0;
             this.n_but.Text = "n";
             this.n_but.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.n_but.UseVisualStyleBackColor = true;
+            this.n_but.UseVisualStyleBackColor = false;
             this.n_but.Click += new System.EventHandler(this.n_but_Click);
             // 
             // tabPage3

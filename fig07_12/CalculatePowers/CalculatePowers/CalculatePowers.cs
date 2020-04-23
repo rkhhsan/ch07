@@ -1,8 +1,8 @@
 ﻿// Fig. 7.12: Power.vb
 // Optional argument demonstration with method Power.
 using System;
-using MathNet.Numerics;
-using MathNet.Numerics.LinearAlgebra;
+//using MathNet.Numerics;
+//using MathNet.Numerics.LinearAlgebra;
 
 class CalculatePowers
 {
@@ -14,7 +14,7 @@ class CalculatePowers
       Console.WriteLine("Power(" + Convert.ToString(a) + " ; 10) = {0}", Power(a, 10));
 
       // Evaluate a special function
-      Console.WriteLine(SpecialFunctions.Erf(0.5));
+      /*Console.WriteLine(SpecialFunctions.Erf(0.5));
 
       // Solve a random linear equation system with 500 unknowns
       var A = Matrix<double>.Build.Random(60, 60);
@@ -22,8 +22,8 @@ class CalculatePowers
       var x = A.Solve(b);
       Console.WriteLine(A);
       Console.WriteLine(b);
-      Console.WriteLine(x);
-
+      Console.WriteLine(x);*/
+      
       Console.WriteLine("\nTecle qualquer tecla para finalizar...");
       Console.ReadKey();
    } // end Main

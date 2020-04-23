@@ -7,7 +7,7 @@ class CalculatePowers
    // call Power with and without optional arguments
    public static void Main(string[] args)
    {
-      double a = 4.347;
+      double a = 3.347;
       Console.WriteLine("Power(10) = {0}", Power(10));
       Console.WriteLine("Power(" + Convert.ToString(a) + " ; 10) = {0}", Power(a, 10));
 

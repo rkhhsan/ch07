@@ -5,22 +5,25 @@ using System;
 class CalculatePowers
 {
    // call Power with and without optional arguments
-   public static void Main( string[] args )
+   public static void Main(string[] args)
    {
-       double a = 2.347;
-      Console.WriteLine( "Power(10) = {0}", Power( 10 ) );
-      Console.WriteLine( "Power("+Convert.ToString(a)+" ; 10) = {0}", Power( a, 10 ) );
+      double a = 4.347;
+      Console.WriteLine("Power(10) = {0}", Power(10));
+      Console.WriteLine("Power(" + Convert.ToString(a) + " ; 10) = {0}", Power(a, 10));
+
+      Console.WriteLine("\nTecle qualquer tecla para finalizar...");
+      Console.ReadKey();
    } // end Main
 
    // use iteration to calculate power
-   public static double Power( double baseValue, int exponentValue = 2 )
+   public static double Power(double baseValue, int exponentValue = 2)
    {
       double result = 1; // initialize total 
 
-      for ( int i = 1; i <= exponentValue; i++ )
+      for (int i = 1; i <= exponentValue; i++)
          result *= baseValue;
-      
-      return result; 
+
+      return result;
    } // end method Power
 } // end class CalculatePowers
 

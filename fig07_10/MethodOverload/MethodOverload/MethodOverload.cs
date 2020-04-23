@@ -9,6 +9,7 @@ public class MethodOverload
    {
       Console.WriteLine( "Square of integer 7 is {0}", Square( 7 ) );
       Console.WriteLine( "Square of double 7.5 is {0}", Square( 7.5 ) );
+
    } // end Main
 
    // square method with int argument
